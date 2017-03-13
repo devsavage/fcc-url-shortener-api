@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener Microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener Microservice</h1>
+        <hr>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Usage</div>
+            <div class="panel-body">
+                <b>URL Shortener Endpoint</b>:
+                <code>https://api-projects-savageboy74.c9users.io/shorten/{url}</code>
+                <br>
+                <br>
+                <code>{url}</code> must be a valid url to shorten.
+                <br>
+                <br>
+                Response:
+                <code>
+<pre>
+{
+    "original": "{your_original_link}",
+    "shortened": "https://api-projects-savageboy74.c9users.io/{unique_url}"
+}
+</pre>
+                </code>
+                <hr>
+                <b>Shortened URL Endpoint</b>:
+                <code>https://api-projects-savageboy74.c9users.io/{unique_url}</code>
+                <br>
+                <br>
+                <code>{unique_url}</code> is the random characters generated for your original link, shown in the response above. This endpoint will redirect you to the original link.
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
